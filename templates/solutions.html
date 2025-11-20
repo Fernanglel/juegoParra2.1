@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soluciones - ODS 14 Vida Submarina</title>
+    <link rel="stylesheet" href="{% static 'styles/baseStyle.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/layout.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'challenges' %}">Desafíos</a></li>
+                <li><a href="{% url 'solutions' %}" class="active">Soluciones</a></li>
+                <li><a href="{% url 'resources' %}">Recursos</a></li>
+                <li><a href="{% url 'web' %}">Toma Acción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <h1><i class="fa-solid fa-lightbulb"></i> Soluciones para proteger nuestros Océanos</h1>
+            <p class="subtitle">Acciones globales y locales para preservar la vida submarina</p>
+        </section>
+
+        <section class="solutions" aria-labelledby="solutions-title">
+
+            <!-- Nueva sección: concientización y videojuego -->
+            <div class="key-facts solution-item">
+                <h2><i class="fa-solid fa-gamepad"></i> Concientización y Tecnología Educativa</h2>
+                <img src="{% static 'images/solutions/videojuego-oda14.jpg' %}" alt="Videojuego educativo ODS 14"
+                    class="challenge-img">
+                <p>Este sitio web forma parte de un proyecto educativo dedicado a la <strong>
+                    concientización ambiental</strong> sobre la ODS 14. Su objetivo es inspirar acción, educación y compromiso
+                    social con los océanos a través de herramientas digitales accesibles.</p>
+                <p>Además, integra un <strong>videojuego educativo</strong> diseñado para enseñar, de forma interactiva,
+                    los principios del ODS 14. En este juego, el jugador participa en misiones de limpieza marina,
+                    protección de especies y restauración de ecosistemas, promoviendo el aprendizaje lúdico sobre
+                    sostenibilidad.</p>
+                <ul>
+                    <li><i class="fa-solid fa-laptop-code"></i> Desarrollado con fines educativos y de concientización
+                        ambiental.</li>
+                    <li><i class="fa-solid fa-users"></i> Fomenta la colaboración, la empatía y la acción por los
+                        océanos.</li>
+                    <li><i class="fa-solid fa-heart"></i> Ejemplo de cómo la tecnología puede generar un impacto
+                        positivo.</li>
+                </ul>
+            </div>
+
+            <!-- Contaminación Marina -->
+            <div class="key-facts solution-item">
+                <h2><i class="fa-solid fa-recycle"></i> Reducción de la Contaminación Marina</h2>
+                <img src="{% static 'images/solutions/limpieza-oceanica.jpg' %}" alt="Limpieza oceánica"
+                    class="challenge-img">
+                <p>Para combatir la contaminación, las principales estrategias se centran en la <strong>prevención en
+                        origen</strong> y la mejora de la gestión de residuos. Los países están adoptando políticas de
+                    <strong>economía circular</strong>, reduciendo el uso de plásticos de un solo uso e incentivando el
+                    reciclaje.
+                </p>
+                <p>Iniciativas como <em>The Ocean Cleanup</em> y <em>UNEP Clean Seas</em> buscan eliminar residuos
+                    plásticos y promover la educación ambiental para generar cambios de comportamiento sostenibles.</p>
+                <ul>
+                    <li><i class="fa-solid fa-leaf"></i> Fomentar materiales biodegradables y empaques sostenibles.</li>
+                    <li><i class="fa-solid fa-school"></i> Programas educativos sobre el impacto de la contaminación
+                        plástica.</li>
+                    <li><i class="fa-solid fa-bottle-water"></i> Reducción global de plásticos de un solo uso.</li>
+                    <li><i class="fa-solid fa-globe"></i> Acuerdos internacionales sobre residuos marinos bajo la ONU
+                        (2024).</li>
+                </ul>
+            </div>
+
+            <!-- Pesca Sostenible -->
+            <div class="key-facts solution-item">
+                <h2><i class="fa-solid fa-fish"></i> Pesca Sostenible y Protección de Especies</h2>
+                <img src="{% static 'images/solutions/pesca-sostenible.jpg' %}" alt="Pesca sostenible"
+                    class="challenge-img">
+                <p>La FAO impulsa prácticas pesqueras sostenibles que garanticen la seguridad alimentaria sin agotar los
+                    recursos. La implementación de <strong>cuotas de captura</strong>, el control satelital de flotas y
+                    la certificación ecológica son medidas efectivas.</p>
+                <p>La creación de áreas marinas protegidas (AMPs) también permite que las poblaciones marinas se
+                    recuperen y fortalezcan la biodiversidad.</p>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Expansión de Áreas Marinas Protegidas al 30 % para
+                        2030.</li>
+                    <li><i class="fa-solid fa-ship"></i> Regulación internacional de la pesca industrial.</li>
+                    <li><i class="fa-solid fa-seedling"></i> Promoción de acuicultura sostenible y de bajo impacto
+                        ambiental.</li>
+                    <li><i class="fa-solid fa-people-group"></i> Apoyo a comunidades costeras en transición hacia
+                        prácticas sostenibles.</li>
+                </ul>
+            </div>
+
+            <!-- Reducción de la Acidificación -->
+            <div class="key-facts solution-item">
+                <h2><i class="fa-solid fa-cloud-sun-rain"></i> Reducción de la Acidificación Oceánica</h2>
+                <img src="{% static 'images/solutions/acidificacion.jpg' %}"
+                    alt="Reducción de la acidificación oceánica" class="challenge-img">
+                <p>La principal solución es <strong>reducir las emisiones globales de CO₂</strong> mediante energías
+                    renovables, transporte limpio y eficiencia energética. Además, restaurar ecosistemas como manglares
+                    y praderas marinas ayuda a absorber carbono atmosférico.</p>
+                <ul>
+                    <li><i class="fa-solid fa-solar-panel"></i> Transición hacia energías renovables.</li>
+                    <li><i class="fa-solid fa-tree"></i> Restauración de manglares, bosques de algas y praderas marinas.
+                    </li>
+                    <li><i class="fa-solid fa-chart-line"></i> Monitoreo internacional del pH oceánico con tecnologías
+                        satelitales.</li>
+                </ul>
+            </div>
+
+            <!-- Conservación de la Biodiversidad -->
+            <div class="key-facts solution-item">
+                <h2><i class="fa-solid fa-dna"></i> Protección de la Biodiversidad Marina</h2>
+                <img src="{% static 'images/solutions/biodiversidad.jpg' %}"
+                    alt="Conservación de la biodiversidad marina" class="challenge-img">
+                <p>La biodiversidad marina se protege mediante la restauración de ecosistemas, el control del turismo
+                    costero y la reducción de contaminantes. La creación de corredores ecológicos submarinos permite la
+                    migración y reproducción natural de especies.</p>
+                <ul>
+                    <li><i class="fa-solid fa-map"></i> Planificación costera integrada con enfoque ecosistémico.</li>
+                    <li><i class="fa-solid fa-water"></i> Protección de arrecifes de coral y zonas de reproducción.</li>
+                    <li><i class="fa-solid fa-hand-holding-water"></i> Promoción de ecoturismo responsable y educación
+                        ambiental.</li>
+                </ul>
+            </div>
+
+            <!-- Adaptación al Calentamiento Oceánico -->
+            <div class="key-facts solution-item">
+                <h2><i class="fa-solid fa-temperature-high"></i> Adaptación al Calentamiento Oceánico</h2>
+                <img src="{% static 'images/solutions/calentamiento-oceanico.jpg' %}"
+                    alt="Adaptación al calentamiento oceánico" class="challenge-img">
+                <p>Mitigar el calentamiento oceánico requiere <strong>acciones climáticas urgentes</strong> combinadas
+                    con la adaptación de comunidades costeras. Se desarrollan proyectos de restauración coralina con
+                    corales resistentes al calor y modelos predictivos del clima oceánico.</p>
+                <ul>
+                    <li><i class="fa-solid fa-temperature-three-quarters"></i> Sistemas de alerta temprana ante olas de
+                        calor marinas.</li>
+                    <li><i class="fa-solid fa-fan"></i> Restauración de corales resistentes al cambio climático.</li>
+                    <li><i class="fa-solid fa-people-arrows"></i> Planes de reubicación y resiliencia costera en
+                        regiones vulnerables.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ODS 14 - Vida Submarina. Parte de la Agenda 2030 de las Naciones Unidas.</p>
+    </footer>
+</body>
+
+</html>
